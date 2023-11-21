@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+.gallery{
+    column-count: 3;
+    column-gap: 0;
+}
+img{
+    width: 100%;
+    aspect-ratio: 1/1;
+
+    object-fit: cover;
+
+    transition: scale 360ms ease, opacity 355ms linear;
+}
+.gallery:has(img:hover) img:not(:hover){
+    scale: .9;
+    opacity: .7;
+}
